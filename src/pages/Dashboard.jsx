@@ -38,7 +38,7 @@ export const Dashboard = () => {
         <div className="bg-[#39A900] w-full h-20 flex items-center">
             <Sidebar />
             <h2 className="text-white text-2xl font-bold ml-auto mr-10">
-                Bienvenido user
+                Bienvenido Diego
             </h2>
             <FaAlignJustify size={30} className="flex mr-3 cursor-pointer"/>
         </div>

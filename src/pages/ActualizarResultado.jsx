@@ -18,7 +18,7 @@ export const ActualizarResultado = () => {
                         <input className='p-2 rounded-lg w-80 h-12' type="date" value="" placeholder='Ingrese la fecha' />
                     </div>
                     <div className='flex flex-col m-5'  >
-                        <label className='text-xl font-bold'> Análisis: </label>
+                        <label className='text-xl font-bold'> Analisis: </label>
                         <select name="" id="" className='p-2 rounded-lg'>
                             <option value="">Código del analisis</option>
                             <option value="">1</option>
