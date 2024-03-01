@@ -20,7 +20,7 @@ export const ActualizarResultado = () => {
                     <div className='flex flex-col m-5'  >
                         <label className='text-xl font-bold'> Analisis: </label>
                         <select name="" id="" className='p-2 rounded-lg'>
-                            <option value="">Código del análisis</option>
+                            <option value="">Código del analisis</option>
                             <option value="">1</option>
                         </select>
                     </div>
