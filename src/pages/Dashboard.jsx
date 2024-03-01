@@ -3,6 +3,8 @@ import { FaAlignJustify } from "react-icons/fa6";
 import ImgBody from './../assets/imagenSliderEjemplo.jpg'
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import { RxDotFilled } from 'react-icons/rx';
+import { Sidebar } from '../components/Sidebar.jsx';
 
 export const Dashboard = () => {
 
@@ -33,8 +35,8 @@ export const Dashboard = () => {
   }
   return (
     <div>
-        <div className="bg-[#39A900] w-full h-16 flex items-center">
-            <FaAlignJustify size={30} className="ml-3 cursor-pointer" />
+        <div className="bg-[#39A900] w-full h-20 flex items-center">
+            <Sidebar />
             <h2 className="text-white text-2xl font-bold ml-auto mr-10">
                 Bienvenido user
             </h2>
@@ -49,6 +51,13 @@ export const Dashboard = () => {
         <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl text-bold rounded-full p-2 bg-black/20 text-white cursor-pointer hidden group-hover:block">
           <FaAngleRight onClick={nextSlide} size={33} />
         </div>
+        <div className="flex justify-center items-center py-2 top-4">
+        {slides.map((slide,index) => (
+          <div key={index} onClick={()=>gotoNextSlide(index)}>
+            <RxDotFilled/>
+          </div>
+        ))}
+      </div>
       </div>
     </div>
   )

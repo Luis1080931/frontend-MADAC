@@ -57,7 +57,7 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         },
         {
             codigo: 2,
@@ -67,7 +67,7 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         },
         {
             codigo: 3,
@@ -77,7 +77,7 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         },
         {
             codigo: 4,
@@ -87,7 +87,7 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         },
         {
             codigo: 5,
@@ -97,7 +97,7 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         }
     ]
 
@@ -127,8 +127,8 @@ export function Resultados () {
                 <FaSistrix size={25} />
             </div>
             <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
-                {/* <Link to={`/registrar`}>Registrar</Link> */}
-                Registrar
+                <Link to={`/resultadosregistrar`}>Registrar</Link>
+                
             </button>
             <DataTable
                 columns={colums}
