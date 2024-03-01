@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { FaX } from "react-icons/fa6";
 import { IconContext } from 'react-icons';
 import './../App.css'
+import { Variables } from '../pages/Varibles';
 
 
 export const Sidebar = ({ children }) => {
@@ -20,6 +21,10 @@ export const Sidebar = ({ children }) => {
             path: '/',
             name: "Dashboard",
             icon: <IoMdHome />
+        },
+        {
+            path: '/variables',
+            name: "Variables",
         },
         {
             path: '/resultados',
