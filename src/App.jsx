@@ -1,19 +1,16 @@
-import {Resultados} from "./pages/Resultados.jsx"
+import {Fincas} from "./pages/Fincas.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { RegistrarResultados } from "./pages/RegistrarResultados.jsx"
-import { ActualizarResultado } from "./pages/ActualizarResultado.jsx"
-import { Dashboard } from "./pages/Dashboard.jsx"
+import { RegistrarFincas } from "./pages/RegistrarFincas.jsx"
+import { ActualizarFincas } from "./pages/ActualizarFincas.jsx"
+import { RegistrarLotes } from "./pages/RegistrarLotes.jsx"
+import { ActualizarLotes } from "./pages/ActualizarLotes.jsx"
+import { Lotes } from "./pages/Lotes.jsx"
 
 function App() {
 
   return (
     <BrowserRouter>    
-
-     
-        {/* <Route path='/'  element={<Resultados />} />
-        <Route path='/registrar' element={<RegistrarResultados />}/> */}
-      
-     { <Dashboard />}
+     { <Fincas/>}
 
     </BrowserRouter>
 

@@ -4,7 +4,7 @@ import { Header } from '../components/Header.jsx'
 import { FaSistrix } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
-export function Resultados () {
+export function Fincas () {
 
     const colums = [
         {
@@ -13,28 +13,23 @@ export function Resultados () {
             sortable: true
         },
         {
-            name: 'Fecha',
-            selector: row => row.fecha,
+            name: 'Dimensiones mt2',
+            selector: row => row.dimension,
             sortable: true
         },
         {
-            name: 'Analisis',
-            selector: row => row.analisis,
+            name: 'Caficultor',
+            selector: row => row.caficultor,
             sortable: true
         },
         {
-            name: 'Variable',
-            selector: row => row.variable,
+            name: 'Municipio',
+            selector: row => row.municipio,
             sortable: true
         },
         {
-            name: 'Observaciones',
-            selector: row => row.observaciones,
-            sortable: true
-        },
-        {
-            name: 'Valor',
-            selector: row => row.valor,
+            name: 'Vereda',
+            selector: row => row.vereda,
             sortable: true
         },
         {
@@ -51,53 +46,53 @@ export function Resultados () {
     const data = [
         {
             codigo: 1,
-            fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
+            dimension: "3000",
+            caficultor: 1,
+            municipio: "Huila",
+            vereda: "Versalles",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button  type="button" >Desactivar</button></div> ,
         },
         {
-            codigo: 2,
-            fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
+            codigo: 1,
+            dimension: "3000",
+            caficultor: 1,
+            municipio: "Huila",
+            vereda: "Versalles",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button  type="button" >Desactivar</button></div> ,
         },
         {
-            codigo: 3,
-            fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
+            codigo: 1,
+            dimension: "3000",
+            caficultor: 1,
+            municipio: "Huila",
+            vereda: "Versalles",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button  type="button" >Desactivar</button></div> ,
         },
         {
-            codigo: 4,
-            fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Cantidad (g)",
-            observaciones: "Peso adecuado",
+            codigo: 1,
+            dimension: "3000",
+            caficultor: 1,
+            municipio: "Huila",
+            vereda: "Versalles",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button  type="button" >Desactivar</button></div> ,
         },
         {
-            codigo: 5,
-            fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
+            codigo: 1,
+            dimension: "3000",
+            caficultor: 1,
+            municipio: "Huila",
+            vereda: "Versalles",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> ,
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button">Actualizar</button> <button  type="button" >Desactivar</button></div> ,
         }
     ]
 
@@ -119,7 +114,7 @@ export function Resultados () {
   return (
     
     <div>
-        <Header title="Resultados" />
+        <Header title="Fincas" />
         <div className='w-10/12 ml-28'>
             
             <div className='w-96 ml-80 bg-[#E5E5E5] flex justify-center items-center m-8 border-2 rounded-lg border-black'>
@@ -133,7 +128,7 @@ export function Resultados () {
             <DataTable
                 columns={colums}
                 data={records}
-                title="Resultados registrados"
+                title="Fincas registradas"
                 fixedHeader
                 pagination
                 paginationComponentOptions={paginaOpciones}
