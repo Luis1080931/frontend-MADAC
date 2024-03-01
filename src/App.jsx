@@ -1,17 +1,16 @@
-import Analisis from "./pages/analisis.jsx";
-import { BrowserRouter, Route } from "react-router-dom";
-import RegistrarAnalisis from "./pages/registrarAnalisis.jsx";
-import ActualizarAnalisis from "./pages/actualizarAnalisis.jsx";
-
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <BrowserRouter>
-      <Analisis />
-      <RegistrarAnalisis />
-      <ActualizarAnalisis />
-    </BrowserRouter>
-  );
+    <>
+      
+    </>
+  )
 }
 
 export default App;
