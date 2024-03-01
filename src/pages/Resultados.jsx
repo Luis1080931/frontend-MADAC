@@ -44,8 +44,12 @@ export function Resultados () {
         },
         {
             name: 'Acciones',
-            selector: row => row.acciones
-        }
+            selector: row => row.acciones 
+        },
+        {
+            name: 'AccionesDe',
+            selector: row => row.accionesDe 
+        },
     ]
 
     const data = [
@@ -57,7 +61,8 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            acciones: <><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> ,
+            accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         },
         {
             codigo: 2,
@@ -121,10 +126,11 @@ export function Resultados () {
     <div>
         <Header title="Resultados" />
         <div className='w-10/12 ml-28'>
-            
-            <div className='w-96 ml-80 bg-[#E5E5E5] flex justify-center items-center m-8 border-2 rounded-lg border-black'>
-                <input className='p-2 bg-[#E5E5E5] text-black rounded-lg w-96' type="text" onChange={handleFilter} placeholder='Buscar' />
-                <FaSistrix size={25} />
+            <div className='flex justify-center items-center text-center'>
+                <div className='w-96 bg-[#E5E5E5] flex items-center m-8 rounded-lg border-black'>
+                    <input className='w-full p-2 bg-[#E5E5E5] text-black rounded-lg border' type="text" onChange={handleFilter} placeholder='Buscar' />
+                    <FaSistrix size={25} style={{ marginRight: 10 }}/>
+                </div>
             </div>
             <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
                 <Link to={`/resultadosregistrar`}>Registrar</Link>
