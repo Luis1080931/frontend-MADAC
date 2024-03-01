@@ -3,11 +3,12 @@ import { IoMdHome } from "react-icons/io";
 import { MdFindInPage, MdAssignmentAdd } from "react-icons/md";
 import { GrDocumentUpdate } from "react-icons/gr";
 import { FaAlignJustify } from "react-icons/fa6";
+import { HiAdjustments } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import { FaX } from "react-icons/fa6";
 import { IconContext } from 'react-icons';
 import './../App.css'
-import { Variables } from '../pages/Varibles';
+import { Variables } from '../pages/Variables';
 
 
 export const Sidebar = ({ children }) => {
@@ -25,6 +26,15 @@ export const Sidebar = ({ children }) => {
         {
             path: '/variables',
             name: "Variables",
+            icon: <HiAdjustments/>
+        },
+        {
+            path: '/registrarvariables',
+            name: "RegistrarVariables",
+        },
+        {
+            path: '/actualizarvariables',
+            name: "ActualizarVariables",
         },
         {
             path: '/resultados',

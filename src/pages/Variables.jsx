@@ -18,9 +18,9 @@ export function Variables () {
             sortable: true
         },
         {
-            name: 'fk tipo de analisis',
+            name: 'fk Tipo analisis',
             selector: row => row.fk_tipo_analisis,
-            sortable: true 
+            sortable: true
         },
         {
             name: 'Estado',
@@ -29,6 +29,10 @@ export function Variables () {
         },
         {
             name: 'Acciones',
+            selector: row => row.acciones 
+        },
+        {
+            name: 'AccionesDe',
             selector: row => row.accionesDe 
         },
     ]
@@ -36,19 +40,20 @@ export function Variables () {
     const data = [
         {
             codigo: 1,
-            nombre: "alejo Asaje ",
+            nombre:"alejo Pasaje",
             fk_tipo_analisis: 1,
             estado: "activo", 
-            acciones: <><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/Variablesactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> ,
+            acciones: <><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/ActualizarVariables`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> ,
             accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         },
         {
             codigo: 2,
-            nombre: "Maria Ceballos ",
-            fk_tipo_analisis: 1,
+            nombre:"jose Mogoñon",
+            fk_tipo_analisis: 2,
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/Variablesactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/ActualizarVariables`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         }
+
     ]
 
     const paginaOpciones={
@@ -78,13 +83,13 @@ export function Variables () {
                 </div>
             </div>
             <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
-                <Link to={`/Variablesregistrar`}>Registrar</Link>
+                <Link to={`/RegistrarVariables`}>Registrar</Link>
                 
             </button>
             <DataTable
                 columns={colums}
                 data={records}
-                title="Variables registrados"
+                title="Variables registradas"
                 fixedHeader
                 pagination
                 paginationComponentOptions={paginaOpciones}

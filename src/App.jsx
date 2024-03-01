@@ -2,9 +2,11 @@ import {Resultados} from "./pages/Resultados.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { RegistrarResultados } from "./pages/RegistrarResultados.jsx"
 import { ActualizarResultado } from "./pages/ActualizarResultado.jsx"
-import { Variables } from "./pages/Varibles.jsx"
+import { Variables } from "./pages/Variables.jsx"
 import { Dashboard } from "./pages/Dashboard.jsx"
 import { Sidebar } from "./components/Sidebar.jsx"
+import { RegistrarVariables } from "./pages/RegistrarVariables.jsx"
+import { ActualizarVariables } from "./pages/ActualizarVariables.jsx"
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/variables" element={<Variables />} />
+          <Route path="/registrarvariables" element={<RegistrarVariables />} />
+          <Route path="/actualizarvariables" element={<ActualizarVariables />} />
           <Route path="/resultados" element={<Resultados />} />
           <Route path="/resultadosregistrar" element={<RegistrarResultados />} />
           <Route path="/resultadosactualizar" element={<ActualizarResultado />} />
