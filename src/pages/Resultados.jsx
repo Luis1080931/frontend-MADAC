@@ -128,7 +128,7 @@ export function Resultados () {
         <div className='w-10/12 ml-28'>
             <div className='flex justify-center items-center text-center'>
                 <div className='w-96 bg-[#E5E5E5] flex items-center m-8 rounded-lg border-black'>
-                    <input className='w-full p-2 bg-[#E5E5E5] text-black rounded-lg border' type="text" onChange={handleFilter} placeholder='Buscar' />
+                    <input className='w-full p-2 bg-[#E5E5E5] text-black rounded-lg border' type="text" onChange={handleFilter} placeholder='Buscar...' />
                     <FaSistrix size={25} style={{ marginRight: 10 }}/>
                 </div>
             </div>
