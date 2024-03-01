@@ -22,21 +22,45 @@ export const Sidebar = ({ children }) => {
             icon: <IoMdHome />
         },
         {
-            path: '/resultados',
-            name: "Resultados",
-            icon: <MdFindInPage />
-        },
-        {
-            path: '/resultadosregistrar',
-            name: "RegistrarResultados",
+            path: '/usuarios',
+            name: "Usuarios",
             icon: <MdAssignmentAdd />
         },
         {
-            path: '/resultadosactualizar',
-            name: 'ActualizarResultados',
+            path: '/fincas',
+            name: 'Fincas',
+            icon: <GrDocumentUpdate />
+        },
+        {
+            path: '/variedades',
+            name: 'Variedades',
+            icon: <GrDocumentUpdate />
+        },
+        {
+            path: '/lotes',
+            name: 'Lotes',
+            icon: <GrDocumentUpdate />
+        },
+        {
+            path: '/muestras',
+            name: 'Muestras',
+            icon: <GrDocumentUpdate />
+        },
+        {
+            path: '/analisis',
+            name: "Analisis",
+            icon: <MdFindInPage />
+        },
+        {
+            path: '/variables',
+            name: 'Variables',
+            icon: <GrDocumentUpdate />
+        },
+        {
+            path: '/resultados',
+            name: 'Resultados',
             icon: <GrDocumentUpdate />
         }
-        
 
     ]
   return (

@@ -6,7 +6,7 @@ import LogoProyecto from './../assets/logoProyeccto-removebg.png'
 export const RegistrarResultados = () => {
   return (
     <div>
-        <HeaderRegis title='Registrar resultados' />
+        <HeaderRegis title='Registrar resultados' link='/resultados' />
         <div className='flex'>
             <div className='bg-[#E6E6E6] flex items-center justify-center p-8 w-4/12 m-16 rounded-lg'>
                 <form action="#">

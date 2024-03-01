@@ -6,7 +6,7 @@ import LogoProyecto from './../assets/logoProyeccto-removebg.png'
 export const ActualizarResultado = () => {
   return (
     <div>
-        <HeaderRegis title='Actualizar resultados' />
+        <HeaderRegis title='Actualizar resultados' link='/resultados' />
         <div className='flex'>
             <div className='w-5/12 flex justify-center items-center ml-20'>
                 <img src={LogoProyecto} alt="" />
