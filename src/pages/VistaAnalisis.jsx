@@ -4,7 +4,7 @@ import { Header } from '../components/Header.jsx'
 import { FaSistrix } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
-export function Resultados () {
+export function VistaAnalisis () {
 
     const colums = [
         {
@@ -18,25 +18,21 @@ export function Resultados () {
             sortable: true
         },
         {
-            name: 'Analisis',
-            selector: row => row.analisis,
+            name: 'Analista',
+            selector: row => row.analista,
             sortable: true
         },
         {
-            name: 'Variable',
-            selector: row => row.variable,
+            name: 'Muestra',
+            selector: row => row.muestra,
             sortable: true
         },
         {
-            name: 'Observaciones',
-            selector: row => row.observaciones,
+            name: 'Tipo De Análisis',
+            selector: row => row.tipoanalisis,
             sortable: true
         },
-        {
-            name: 'Valor',
-            selector: row => row.valor,
-            sortable: true
-        },
+
         {
             name: 'Estado',
             selector: row => row.estado,
@@ -47,7 +43,7 @@ export function Resultados () {
             selector: row => row.acciones 
         },
         {
-            name: 'AccionesDe',
+            name: '',
             selector: row => row.accionesDe 
         },
     ]
@@ -56,53 +52,53 @@ export function Resultados () {
         {
             codigo: 1,
             fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
-            valor: "30 g",
-            estado: "activo", 
-            acciones: <><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> ,
+            analista: 10330,
+            muestra: 21,
+            tipoanalisis: "Físico",
+            estado: "Activo", 
+            acciones: <><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/analisisactualizar`}>Actualizar</Link></button> </> ,
             accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         },
         {
             codigo: 2,
             fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
-            valor: "30 g",
-            estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            analista: 55123,
+            muestra: 22,
+           tipoanalisis: "Sensorial",
+            estado: "Activo", 
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/analisisactualizar`}>Actualizar</Link></button> </div> ,
+            accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
+
         },
         {
             codigo: 3,
             fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
-            valor: "30 g",
-            estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            analista: 14624,
+            muestra: 23,
+            tipoanalisis: "Físico",
+            estado: "Activo", 
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/analisisactualizar`}>Actualizar</Link></button> </div> ,
+            accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         },
         {
             codigo: 4,
             fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Cantidad (g)",
-            observaciones: "Peso adecuado",
-            valor: "30 g",
-            estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            analista: 15369,
+            muestra: 24,
+            tipoanalisis: "Sensorial",
+            estado: "Activo", 
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/analisisactualizar`}>Actualizar</Link></button> </div>,
+            accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         },
         {
             codigo: 5,
             fecha: "2024-02-29",
-            analisis: 1,
-            variable: "Peso (g)",
-            observaciones: "Peso adecuado",
-            valor: "30 g",
-            estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            analista: 13214,
+            muestra: 25,
+            tipoanalisis: "Físico",
+            estado: "Inactivo", 
+            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/analisisactualizar`}>Actualizar</Link></button></div> ,
+            accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         }
     ]
 
@@ -124,7 +120,7 @@ export function Resultados () {
   return (
     
     <div>
-        <Header title="Resultados" />
+        <Header title="Análisis" />
         <div className='w-10/12 ml-28'>
             <div className='flex justify-center items-center text-center'>
                 <div className='w-96 bg-[#E5E5E5] flex items-center m-8 rounded-lg border-black'>
@@ -133,13 +129,13 @@ export function Resultados () {
                 </div>
             </div>
             <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
-                <Link to={`/resultadosregistrar`}>Registrar</Link>
+                <Link to={`/analisisregistrar`}>Registrar</Link>
                 
             </button>
             <DataTable
                 columns={colums}
                 data={records}
-                title="Resultados registrados"
+                title="Análisis registrados"
                 fixedHeader
                 pagination
                 paginationComponentOptions={paginaOpciones}

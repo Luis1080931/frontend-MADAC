@@ -3,10 +3,10 @@ import { HeaderRegis } from '../components/HeaderRegis.jsx'
 import LogoSena from './../assets/Logosimbolo-SENA-PRINCIPAL.png'
 import LogoProyecto from './../assets/logoProyeccto-removebg.png'
 
-export const registrarAnalisis = () => {
+export const RegistrarAnalisis = () => {
   return (
     <div>
-        <HeaderRegis title='Registrar resultados' />
+        <HeaderRegis title='Registrar Analisis' />
         <div className='flex'>
             <div className='bg-[#E6E6E6] flex items-center justify-center p-8 w-4/12 m-16 rounded-lg'>
                 <form action="#">

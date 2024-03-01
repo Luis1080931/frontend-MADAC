@@ -3,10 +3,10 @@ import { HeaderRegis } from '../components/HeaderRegis.jsx'
 import LogoSena from './../assets/Logosimbolo-SENA-PRINCIPAL.png'
 import LogoProyecto from './../assets/logoProyeccto-removebg.png'
 
-export const RegistrarResultados = () => {
+export const AnalisisRegistrar = () => {
   return (
     <div>
-        <HeaderRegis title='Registrar resultados' />
+        <HeaderRegis title='Registrar Analisis' />
         <div className='flex'>
             <div className='bg-[#E6E6E6] flex items-center justify-center p-8 w-4/12 m-16 rounded-lg'>
                 <form action="#">
@@ -15,26 +15,26 @@ export const RegistrarResultados = () => {
                         <input className='p-2 rounded-lg w-80 h-12' type="date" value="" placeholder='Ingrese la fecha' />
                     </div>
                     <div className='flex flex-col m-5'  >
-                        <label className='text-xl font-bold'> Analisis: </label>
+                        <label className='text-xl font-bold'> Analista: </label>
                         <select name="" id="" className='p-2 rounded-lg'>
-                            <option value="">Código del análisis</option>
-                            <option value="">1</option>
+                            <option value="">Código del analista</option>
+                            <option value="">10330</option>
                         </select>
                     </div>
                     <div className='flex flex-col m-5'>
-                        <label className='text-xl font-bold'> Variable: </label>
+                        <label className='text-xl font-bold'> Muestra: </label>
                         <select name="" id="" className='p-2 rounded-lg w-80 h-12'>
-                            <option value="">Código de la variable</option>
-                            <option value="">1</option>
+                            <option value="">Código de la muestra</option>
+                            <option value="">21</option>
                         </select>
                     </div>
                     <div className='flex flex-col m-5'>
-                        <label className='text-xl font-bold'> Valor: </label>
-                        <input className='p-2 rounded-lg w-80 h-12' type="text" value="" placeholder='Ingrese la valor' />
-                    </div>
-                    <div className='flex flex-col m-5'>
-                        <label className='text-xl font-bold'> Observaciones: </label>
-                        <textarea className='p-2 rounded-lg' ame="" id="" cols="30" rows="3" placeholder='Observaciones'></textarea>
+                        <label className='text-xl font-bold'> Tipo De Análisis: </label>
+                        <select name="" id="" className='p-2 rounded-lg w-80 h-12'>
+                            <option value="">Seleccione el tipo de Análisis</option>
+                            <option value="">Físico</option>
+                            <option value="">Sensorial</option>
+                        </select>
                     </div>
                     <div className='flex flex-col m-5 justify-center items-center'>
                         <button className='bg-[#39A900] w-32 p-2 rounded-lg text-white font-bold text-xl' type="button">Registrar</button>
