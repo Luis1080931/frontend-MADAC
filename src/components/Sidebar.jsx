@@ -37,6 +37,19 @@ export const Sidebar = ({ children }) => {
             name: "ActualizarVariables",
         },
         {
+            path: '/muestras',
+            name: "Muestras",
+        },
+        {
+            path: '/registrarmuestras',
+            name: "RegistrarMuestras",
+        },
+        {
+            path: '/actualizarmuestras',
+            name: "ActualizarMuestras",
+        },
+
+        {
             path: '/resultados',
             name: "Resultados",
             icon: <MdFindInPage />
