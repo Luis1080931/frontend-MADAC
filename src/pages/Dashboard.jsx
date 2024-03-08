@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { FaAlignJustify } from "react-icons/fa6";
-import ImgBody from './../assets/icons/imgBody.webp'
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import { RxDotFilled } from 'react-icons/rx';
 import { Sidebar } from '../components/Sidebar.jsx';
+import { SideBarUser } from '../components/SideBarUser.jsx';
 
 export const Dashboard = () => {
 
@@ -40,7 +40,7 @@ export const Dashboard = () => {
             <h2 className="text-white text-2xl font-bold ml-auto mr-10">
                 Bienvenido Diego
             </h2>
-            <FaAlignJustify size={30} className="flex mr-3 cursor-pointer"/>
+            <SideBarUser />
         </div>
         <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
           <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full bg-center bg-cover duration-500'>

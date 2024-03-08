@@ -20,6 +20,28 @@
   z-index: 500;
 }
 
+.nav-menu-user.active{
+  right: 0;
+  transition: 550ms;
+  scroll-behavior: smooth;
+  z-index: 500;
+  overflow-x: hidden;
+}
+
+.nav-menu-user{
+  background-color: #39A900;
+  width: 250px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+  scroll-behavior: smooth;
+  z-index: 500;
+}
+
 .formLogin{
   position: absolute;
   opacity: 0;

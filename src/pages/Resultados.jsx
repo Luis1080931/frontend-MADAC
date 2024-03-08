@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DataTable from 'react-data-table-component'
 import { Header } from '../components/Header.jsx'
-import { FaSistrix } from "react-icons/fa6";
+import { Buscador } from '../components/Buscador.jsx';
 import { Link } from 'react-router-dom';
 
 export function Resultados () {
@@ -127,10 +127,8 @@ export function Resultados () {
         <Header title="Resultados" />
         <div className='w-full flex flex-col justify-center items-center p-10'>
             
-            <div className='w-96 bg-[#E5E5E5] flex justify-center items-center m-8 border-2 rounded-lg border-black md:flex'>
-                <input className='p-2 bg-[#E5E5E5] text-black rounded-lg w-96' type="text" onChange={handleFilter} placeholder='Buscar' />
-                <FaSistrix size={25} />
-            </div>
+            <Buscador handler={handleFilter} />
+            
             <div className='flex w-full'>
                 <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
                     <Link to={`/resultadosregistrar`}>Registrar</Link>
