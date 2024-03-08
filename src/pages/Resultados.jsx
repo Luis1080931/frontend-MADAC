@@ -125,17 +125,18 @@ export function Resultados () {
     
     <div>
         <Header title="Resultados" />
-        <div className='w-10/12 ml-28'>
-            <div className='flex justify-center items-center text-center'>
-                <div className='w-96 bg-[#E5E5E5] flex items-center m-8 rounded-lg border-black'>
-                    <input className='w-full p-2 bg-[#E5E5E5] text-black rounded-lg border' type="text" onChange={handleFilter} placeholder='Buscar' />
-                    <FaSistrix size={25} style={{ marginRight: 10 }}/>
-                </div>
+        <div className='w-full flex flex-col justify-center items-center p-10'>
+            
+            <div className='w-96 bg-[#E5E5E5] flex justify-center items-center m-8 border-2 rounded-lg border-black md:flex'>
+                <input className='p-2 bg-[#E5E5E5] text-black rounded-lg w-96' type="text" onChange={handleFilter} placeholder='Buscar' />
+                <FaSistrix size={25} />
             </div>
-            <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
-                <Link to={`/resultadosregistrar`}>Registrar</Link>
-                
-            </button>
+            <div className='flex w-full'>
+                <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
+                    <Link to={`/resultadosregistrar`}>Registrar</Link>
+                    
+                </button>
+            </div>
             <DataTable
                 columns={colums}
                 data={records}
@@ -146,6 +147,7 @@ export function Resultados () {
             >
 
             </DataTable>
+            
         </div>
     </div>
   )
