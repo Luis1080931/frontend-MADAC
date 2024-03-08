@@ -17,7 +17,7 @@ export const RegistrarResultados = () => {
                     <div className='flex-col m-5 md:flex'  >
                         <label className='text-xl font-bold'> Analisis: </label>
                         <select name="" id="" className='p-2 rounded-lg'>
-                            <option value="">Código del análisis</option>
+                            <option value="">Código del analisis</option>
                             <option value="">1</option>
                         </select>
                     </div>

@@ -44,8 +44,12 @@ export function Resultados () {
         },
         {
             name: 'Acciones',
-            selector: row => row.acciones
-        }
+            selector: row => row.acciones 
+        },
+        {
+            name: 'AccionesDe',
+            selector: row => row.accionesDe 
+        },
     ]
 
     const data = [
@@ -57,7 +61,8 @@ export function Resultados () {
             observaciones: "Peso adecuado",
             valor: "30 g",
             estado: "activo", 
-            acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
+            acciones: <><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> ,
+            accionesDe: <><button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></> 
         },
         {
             codigo: 2,
@@ -96,7 +101,7 @@ export function Resultados () {
             variable: "Peso (g)",
             observaciones: "Peso adecuado",
             valor: "30 g",
-            estado: "activo", 
+            estado: "inactivo", 
             acciones: <div><button className='bg-[#FFC700] p-2 rounded-lg text-sm font-bold' type="button"><Link to={`/resultadosactualizar`}>Actualizar</Link></button> <button className='bg-[#ED6158] p-2 rounded-lg text-sm font-bold' type="button">Desactivar</button></div> 
         }
     ]
