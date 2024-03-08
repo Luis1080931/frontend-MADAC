@@ -2,7 +2,7 @@
   left: 0;
   transition: 350ms;
   scroll-behavior: smooth;
-  z-index: 2;
+  z-index: 500;
   overflow-x: hidden;
 }
 
