@@ -19,7 +19,7 @@ export const ActualizarMuestras = () => {
                     </div>
                     <div className='flex flex-col m-5'>
                         <label className='text-xl font-bold'> Cantidad: </label>
-                        <input className='p-2 rounded-lg w-80 h-12' type="Number" value="" placeholder='Ingrese la Cantidad' />
+                        <input className='p-2 rounded-lg w-80 h-12' type="float" value="" placeholder='Ingrese la Cantidad' />
                     </div>
                     <div className='flex flex-col m-5'>
                         <label className='text-xl font-bold'>Quien recibe: </label>
@@ -31,11 +31,11 @@ export const ActualizarMuestras = () => {
                     </div>
                     <div className='flex flex-col m-5'>
                         <label className='text-xl font-bold'> Humedad del cafe: </label>
-                        <input className='p-2 rounded-lg w-80 h-12' type="Number" value="" placeholder='Ingrese la humedad del cafe' />
+                        <input className='p-2 rounded-lg w-80 h-12' type="float" value="" placeholder='Ingrese la humedad del cafe' />
                     </div>
                     <div className='flex flex-col m-5'>
                         <label className='text-xl font-bold'> Altura MSNM: </label>
-                        <input className='p-2 rounded-lg w-80 h-12' type="Number" value="" placeholder='Ingrese la altura ' />
+                        <input className='p-2 rounded-lg w-80 h-12' type="float" value="" placeholder='Ingrese la altura ' />
                     </div>
                     <div className='flex flex-col m-5'>
                         <label className='text-xl font-bold'> Tipo de secado: </label>
