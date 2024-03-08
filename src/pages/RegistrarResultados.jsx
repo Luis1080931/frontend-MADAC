@@ -6,9 +6,9 @@ import LogoProyecto from './../assets/icons/logoProyeccto-removebg.png'
 export const RegistrarResultados = () => {
   return (
     <div>
-        <HeaderRegis title='Registrar resultados' />
+        <HeaderRegis title='Registrar resultados' link='/resultados' />
         <div className='w-[100%] flex md:flex md:rounded-2xl'>
-            <div className='bg-[#E6E6E6] flex items-center justify-center p-8 w-4/12 m-16 rounded-lg  md:grid md:rounded-2xl md:w-1/2 md:content-center'>
+            <div className='bg-[#E6E6E6] flex items-center justify-center p-8 m-16 rounded-lg md:grid md:rounded-2xl md:w-4/12 md:content-center'>
                 <form action="#" className='flex-col md:flex md:rounded-2xl md:w-1/2'>
                     <div className='flex flex-col m-5'>
                         <label className='text-xl font-bold'> Fecha: </label>
@@ -34,7 +34,7 @@ export const RegistrarResultados = () => {
                     </div>
                     <div className='flex-col m-5 md:flex'>
                         <label className='text-xl font-bold'> Observaciones: </label>
-                        <textarea className='p-2 rounded-lg' ame="" id="" cols="30" rows="3" placeholder='Observaciones'></textarea>
+                        <textarea className='p-2 rounded-lg w-80 ' ame="" id="" cols="30" rows="3" placeholder='Observaciones'></textarea>
                     </div>
                     <div className='flex-col m-5 md:flex justify-center items-center'>
                         <button className='bg-[#39A900] w-32 p-2 rounded-lg text-white font-bold text-xl' type="button">Registrar</button>

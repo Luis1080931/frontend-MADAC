@@ -123,7 +123,6 @@ export function Fincas () {
             </div>
             <button className='bg-[#39A900] p-2 rounded-lg text-white font-bold w-32' type="button">
                 <Link to={`/fincasregistrar`}>Registrar</Link>
-                Registrar
             </button>
             <DataTable
                 columns={colums}

@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { RegistrarResultados } from "./pages/RegistrarResultados.jsx"
-import { ActualizarResultado } from "./pages/ActualizarResultado.jsx"
 import { Login } from "./pages/Login.jsx"
 import { Dashboard } from "./pages/Dashboard.jsx"
-import { Resultados } from "./pages/Resultados.jsx"
+import { Usuarios } from "./pages/Usuarios.jsx"
+import { RegistrarUsuarios } from "./pages/RegistrarUsuarios.jsx"
+import { ActualizarUsuarios } from "./pages/ActualizarUsuarios.jsx"
 import { Fincas } from "./pages/Fincas.jsx"
 import { RegistrarFincas } from "./pages/RegistrarFincas.jsx"
 import { ActualizarFincas } from "./pages/ActualizarFincas.jsx"
@@ -16,9 +16,16 @@ import { ActualizarMuestras } from "./pages/ActualizarMuestra.jsx"
 import { Variables } from "./pages/Variables.jsx"
 import { RegistrarVariables } from "./pages/RegistrarVariables.jsx"
 import { ActualizarVariables } from "./pages/ActualizarVariables.jsx"
-import { Usuarios } from "./pages/Usuarios.jsx"
-import { RegistrarUsuarios } from "./pages/RegistrarUsuarios.jsx"
-import { ActualizarUsuarios } from "./pages/ActualizarUsuarios.jsx"
+import { VistaVariedades } from "./pages/VistaVariedades.jsx"
+import { VariedadesRegistrar } from "./pages/VariedadesRegistrar.jsx"
+import { VariedadesActualizar } from "./pages/VariedadesActualizar.jsx"
+import { VistaAnalisis } from "./pages/VistaAnalisis.jsx"
+import { AnalisisRegistrar } from "./pages/AnalisisRegistrar.jsx"
+import { AnalisisActualizar } from "./pages/AnalisisActualizar.jsx"
+import { Resultados } from "./pages/Resultados.jsx"
+import { RegistrarResultados } from "./pages/RegistrarResultados.jsx"
+import { ActualizarResultado } from "./pages/ActualizarResultados.jsx"
+
 
 
 
@@ -48,11 +55,16 @@ function App() {
           <Route path="/usuarios" element={<Usuarios />} />
           <Route path="/usuariosregistrar" element={<RegistrarUsuarios />} />
           <Route path="/usuariosactualizar" element={<ActualizarUsuarios />} />
+          <Route path="/variedades" element={<VistaVariedades />} />
+          <Route path="/variedadesregistrar" element={<VariedadesRegistrar />} />
+          <Route path="/variedadesactualizar" element={<VariedadesActualizar />} />
+          <Route path="/analisis" element={<VistaAnalisis />} />
+          <Route path="/analisisregistrar" element={<AnalisisRegistrar />} />
+          <Route path="/analisisactualizar" element={<AnalisisActualizar />} />
         </Routes>
 
     </BrowserRouter>
-
   )
 }
 
-export default App
+export default App;
