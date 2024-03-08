@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { RegistrarResultados } from "./pages/RegistrarResultados.jsx"
 import { ActualizarResultado } from "./pages/ActualizarResultado.jsx"
+import { Login } from "./pages/Login.jsx"
 import { Dashboard } from "./pages/Dashboard.jsx"
 import { Resultados } from "./pages/Resultados.jsx"
 import { Fincas } from "./pages/Fincas.jsx"
@@ -15,6 +16,10 @@ import { ActualizarMuestras } from "./pages/ActualizarMuestra.jsx"
 import { Variables } from "./pages/Variables.jsx"
 import { RegistrarVariables } from "./pages/RegistrarVariables.jsx"
 import { ActualizarVariables } from "./pages/ActualizarVariables.jsx"
+import { Usuarios } from "./pages/Usuarios.jsx"
+import { RegistrarUsuarios } from "./pages/RegistrarUsuarios.jsx"
+import { ActualizarUsuarios } from "./pages/ActualizarUsuarios.jsx"
+
 
 
 function App() {
@@ -23,7 +28,7 @@ function App() {
     <BrowserRouter>    
     {/*   <Sidebar /> */}
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/fincas" element={<Fincas />} />
           <Route path="/fincasregistrar" element={<RegistrarFincas />} />
@@ -40,6 +45,9 @@ function App() {
           <Route path="/muestras" element={<Muestras />} />
           <Route path="/muestrasregistrar" element={<RegistrarMuestras />} />
           <Route path="/muestrasactualizar" element={<ActualizarMuestras />} />
+          <Route path="/usuarios" element={<Usuarios />} />
+          <Route path="/usuariosregistrar" element={<RegistrarUsuarios />} />
+          <Route path="/usuariosactualizar" element={<ActualizarUsuarios />} />
         </Routes>
 
     </BrowserRouter>

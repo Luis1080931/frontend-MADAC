@@ -3,7 +3,6 @@ import { IoMdHome } from "react-icons/io";
 import { MdFindInPage, MdAssignmentAdd } from "react-icons/md";
 import { GrDocumentUpdate } from "react-icons/gr";
 import { FaAlignJustify } from "react-icons/fa6";
-import { HiAdjustments } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import { FaX } from "react-icons/fa6";
 import { IconContext } from 'react-icons';
@@ -19,7 +18,7 @@ export const Sidebar = ({ children }) => {
 
     const menuItem = [
         {
-            path: '/',
+            path: '/dashboard',
             name: "Dashboard",
             icon: <IoMdHome />
         },
@@ -75,8 +74,8 @@ export const Sidebar = ({ children }) => {
         </div>
         <IconContext.Provider value={{ color: '#000' }}>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-            <ul className='w-full mt-14' onClick={showSideBar}>
-                <li className='ml-8 text-3xl bg-none'>
+            <ul className='w-full mt-9' onClick={showSideBar}>
+                <li className='ml-4 text-3xl bg-none'>
                     <Link to='#'>
                         <FaX />
                     </Link>
